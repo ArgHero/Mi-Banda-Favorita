@@ -52,7 +52,8 @@ div.historia-banda{
 
 div#carouselExampleCaptions div.carousel-inner div.carousel-item img{
     aspect-ratio: 1;
-    width: 70vw;;
+    width: 70vw;
+    max-width: 800px;
     
 }
 div.accordion{
