@@ -4,51 +4,67 @@
     --contenedor: #E4C087;
     --bordes: #BC7C7C;
 }
-html{
+body{
     font-family: "Roboto Flex", sans-serif;
-    background-color: var(--fondo);
-    text-align: center;
-    padding: 20px;
-
-}
-a{
-    text-decoration: none;
-    color: var(--bordes);
-    padding:10px;
-}
-a:hover{
-    background-color: var(--bordes);
-    color: var(--encabezado);
-    border-radius: 10px;
-}
-h1{
-    color: var(--encabezado);
-    font-size: 3rem;
-
-}
-
-img{
-    width: 400px;
-    height: auto;
-    border-radius: 50%;
-    box-shadow: var(--contenedor) 0 0 20px;
-}
-
-
-p{
-    font-weight: 1000;
-    width: 400px;
-    padding: 1.5rem;
-    border-radius: 20px;
-    text-align: justify;
-    transform: translateX(50%);
-    margin-top: -40px;
-    box-shadow: 0 0 10px rgba(0,0,0,1);
-    position: relative;
-    z-index: 1;
-    margin-left: 10%;
-    background-color: var(--bordes);
-    color: var(--encabezado);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--encabezado);
     
+}
+
+nav.navbar{
+    margin-bottom: 1em;
+    width: 100%;
+}
+
+nav.navbar div.container-fluid button.navbar-toggler{
+    background-color: var(--fondo);
+}
+nav.navbar a.nav-link{
+    width: fit-content;
+    border-radius: 1em;
+    padding: 0.5em 2em;
+}
+nav.navbar a.nav-link:hover{
+    background-color: var(--encabezado);
+}
+
+nav.navbar div.container-fluid a.navbar-brand{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav.navbar div.container-fluid a.navbar-brand img{
+    min-height: 25px;
+    min-width: 50px;
+    
+    border-radius: 1em;
+    border: black 1px solid;
+    
+}
+div.historia-banda{
+    width: 75%;
+}
+
+div#carouselExampleCaptions div.carousel-inner div.carousel-item img{
+    aspect-ratio: 1;
+    width: 70vw;;
+    
+}
+div.accordion{
+    width: 100%;
+}
+
+
+footer{
+    width: 100%;
+}
+
+footer img{
+    max-width: 20px;
 }
 
