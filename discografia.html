@@ -9,73 +9,372 @@
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
     <title>Discografía</title>
   </head>
   <body>
-    <!--Crear tres-cinco tarjetas con los albumes de la banda-->
-    <a href="./index.html">Regresa a la página de inicio</a>
-    <div>
-      <img src="./assets/album1.jpg" alt="Kessoku Band" width="400px" />
-      <h5>Kessoku Band</h5>
-      <h6>2022</h6>
-      <p>
-        El álbum de estudio debut de Kessoku Band, una banda de rock ficticia de
-        la serie de televisión de anime Bocchi the Rock!. Fue lanzado
-        digitalmente por Aniplex el 25 de diciembre de 2022 y físicamente en CD
-        el 28 de diciembre. Con las voces de las actrices de voz Yoshino Aoyama,
-        Sayumi Suzushiro, Saku Mizuno e Ikumi Hasegawa, el álbum consta de
-        canciones incluidas en la serie de anime.
-      </p>
-      <ol>
-        <li>Never forget</li>
-        <li>Karakara</li>
-        <li>If I could be a constelation</li>
-      </ol>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img
+            src="https://i.pinimg.com/736x/8d/70/d4/8d70d41ae70090454001146627046274.jpg"
+            alt="banda"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html"
+                >Página Principal</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./formulario.html">Comentarios</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                target="_blank"
+                href="https://music.youtube.com/channel/UC6IhDHJbJUoRJGUPnlh5GRQ?si=miy5x_IkQGD-9jY4"
+                >Escucha al artista
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="3"
+          aria-label="Slide 4"
+        ></button>
+      </div>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="./assets/album1.webp"
+            alt="Kessoku Band"
+            class="d-block w-100"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Kessoku Band</h5>
+            <h5>2022</h5>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="./assets/album2.webp" class="d-block w-100" alt="Re:Re" />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>！Re:/Re:Re:</h5>
+            <h5>2024</h5>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="./assets/album3.webp" class="d-block w-100" alt="Re:Re" />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>SEISHUN THEORY</h5>
+            <h5>2000</h5>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="./assets/album4.webp" class="d-block w-100" alt="We will" />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>We Will!</h5>
+            <h5>2025</h5>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
 
-    <div>
-      <img src="./assets/album2.jpg" alt="Re:Re" width="400px" />
-      <h5>！Re:/Re:Re:</h5>
-      <h6>2024</h6>
-      <p>Tributo a canciones destacadas dentro de la industria del anime.</p>
-      <ol>
-        <li>Shine as usual</li>
-        <li>Re:Re:</li>
-        <li>Me and the three primary colors</li>
-      </ol>
+    <hr />
+
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseFour"
+            aria-expanded="false"
+            aria-controls="flush-collapseFour"
+          >
+            Kessoku Band (2022)
+          </button>
+        </h2>
+        <div
+          id="flush-collapseFour"
+          class="accordion-collapse collapse"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <p>
+              El álbum de estudio debut de Kessoku Band, una banda de rock
+              ficticia de la serie de televisión de anime Bocchi the Rock!. Fue
+              lanzado digitalmente por Aniplex el 25 de diciembre de 2022 y
+              físicamente en CD el 28 de diciembre. Con las voces de las
+              actrices de voz Yoshino Aoyama, Sayumi Suzushiro, Saku Mizuno e
+              Ikumi Hasegawa, el álbum consta de canciones incluidas en la serie
+              de anime.
+            </p>
+            <ol>
+              <li>Never forget</li>
+              <li>Karakara</li>
+              <li>If I could be a constelation</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseFive"
+            aria-expanded="false"
+            aria-controls="flush-collapseFive"
+          >
+            Tributo (2024)
+          </button>
+        </h2>
+        <div
+          id="flush-collapseFive"
+          class="accordion-collapse collapse"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <p>
+              Tributo a canciones destacadas dentro de la industria del anime.
+            </p>
+            <ol>
+              <li>Shine as usual</li>
+              <li>Re:Re:</li>
+              <li>Me and the three primary colors</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseSix"
+            aria-expanded="false"
+            aria-controls="flush-collapseSix"
+          >
+            SEISHUN THEORY (2000)
+          </button>
+        </h2>
+        <div
+          id="flush-collapseSix"
+          class="accordion-collapse collapse"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <p>
+              Seushun Theory es el álbum debut de la banda japonesa Kessoku
+              Band, publicado por la compañía discográfica Warner Bros. Records
+              el 24 de octubre de 2000. El trabajo fue un éxito comercial: es el
+              álbum de rock del siglo XXI con mayor cantidad de ventas y el
+              segundo álbum debut más vendido de la historia después de Appetite
+              for Destruction de Guns N' Roses.
+            </p>
+            <ol>
+              <li>In the start</li>
+              <li>One step futher</li>
+              <li>Scissors cut</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseSeven"
+            aria-expanded="false"
+            aria-controls="flush-collapseSeven"
+          >
+            ！Re:/Re:Re: (2024)
+          </button>
+        </h2>
+        <div
+          id="flush-collapseSeven"
+          class="accordion-collapse collapse"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <p>Album promocional de la pelicula con el mismo nombre.</p>
+            <ol>
+              <li>UNITE</li>
+              <li>milky way</li>
+              <li>Planet</li>
+            </ol>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <div>
-      <img src="./assets/album3.jpg" alt="seishun theory" width="400px" />
-      <h5>SEISHUN THEORY</h5>
-      <h6>2000</h6>
-      <p>
-        Seushun Theory es el álbum debut de la banda japonesa Kessoku Band,
-        publicado por la compañía discográfica Warner Bros. Records el 24 de
-        octubre de 2000. El trabajo fue un éxito comercial: es el álbum de rock
-        del siglo XXI con mayor cantidad de ventas y el segundo álbum debut más
-        vendido de la historia después de Appetite for Destruction de Guns N'
-        Roses.
-      </p>
-      <ol>
-        <li>In the start</li>
-        <li>One step futher</li>
-        <li>Scissors cut</li>
-      </ol>
-    </div>
+    <hr />
 
-    <div>
-      <img src="./assets/album4.jpg" alt="We will" width="400px"/>
-      <h5>！Re:/Re:Re:</h5>
-      <h6>2024</h6>
-      <p>Album promocional de la pelicula con el mismo nombre.</p>
-      <ol>
-        <li>UNITE</li>
-        <li>milky way</li>
-        <li>Planet</li>
-      </ol>
-    </div>
-
+    <footer class="bg-light text-center text-lg-start mt-5">
+      <div class="container p-4">
+        <div class="row">
+          <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Popularidad</h5>
+            <p>
+              La banda ha ganado popularidad tanto dentro como fuera del
+              contexto del anime, con su música resonando en la Generación Z.
+            </p>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Saber más</h5>
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a
+                  href="https://bocchi.rocks/kessokuband/"
+                  class="text-dark"
+                  target="_blank"
+                  >Pagina Oficial</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://bocchi-the-rock.fandom.com/wiki/Kessoku_Band"
+                  class="text-dark"
+                  target="_blank"
+                  >Fandom</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://es.wikipedia.org/wiki/Bocchi_the_Rock!"
+                  class="text-dark"
+                  target="_blank"
+                  >Wikipedia</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Redes sociales</h5>
+            <ul class="list-unstyled mb-0 redes-sociales">
+              <li>
+                <a
+                  href="https://twitter.com/BTR_anime"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="https://bocchi.rocks/kessokuband/assets/img/common/ico/ico_x.svg"
+                    alt="X"
+                  />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.tiktok.com/@btr_chiktok"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="https://bocchi.rocks//kessokuband/assets/img/common/ico/ico_tik.svg"
+                    alt="TikTok"
+                  />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/BTR_isosta/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="https://bocchi.rocks/kessokuband/assets/img/common/ico/ico_insta.svg"
+                    alt="Instagram"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2025 Copyright:
+        <a class="text-dark" href="https://tu-pagina-web.com/">
+          Kessoku-Bando.com
+        </a>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
