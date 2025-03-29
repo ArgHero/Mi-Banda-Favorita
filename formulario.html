@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/comentarios.css" />
+    <title>Formulario</title>
+</head>
+<body>
+    <a href="./index.html">Regresa a la página de inicio</a>
+    <h1>Comentarios</h1>
+    <section class="comentarios">
+        <template id="template-comentario">
+            <article class="comentario">
+                <h3>Usuario 1</h3>
+                <p>Este es un comentario de prueba</p>
+            </article>
+        </template>
+        <article class="comentario">
+            <h3>Usuario 2</h3>
+            <p>Este es otro comentario de prueba</p>
+        </article>
+
+    </section>
+
+    <form class="container-comentario" action="" method="POST">
+        <div class="container">
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Usuario" required />
+        </div>
+        <div class="container">
+            <label for="comentario">Comentario:</label>
+            <textarea name="comentario" id="comentario" placeholder="Ingresa tu comentario" required></textarea>
+        </div>
+        <button type="submit">Comentar</button>
+    </form>
+</body>
+</html>
